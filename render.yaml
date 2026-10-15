@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: smart-tour-guide-backend
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn smart_guide_backend.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: "qwen/qwen3.8-27b"
+      - key: GEOAPIFY_API_KEY
+        sync: false

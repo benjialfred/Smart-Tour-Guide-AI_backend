@@ -1,0 +1,58 @@
+{
+  "metrics": {
+    "timestamp": "2026-10-15T02:43:41.154739",
+    "total_tests_requested": 3,
+    "total_tests_executed": 3,
+    "successful_tests": 3,
+    "success_rate_percent": 100.0,
+    "total_time_seconds": 75.9,
+    "avg_duration_seconds": 25.3,
+    "total_pois_discovered": 7,
+    "total_itinerary_stops_generated": 6,
+    "fine_tuning_records_saved": 3
+  },
+  "detailed_results": [
+    {
+      "test_id": 1,
+      "destination": "Paris",
+      "country": "France",
+      "query": "Quels sont les 3 monuments historiques incontournables et leurs anecdotes secrètes ?",
+      "success": true,
+      "error": null,
+      "duration_seconds": 3.39,
+      "features_count": 0,
+      "itinerary_stops_count": 0,
+      "reply_length": 2655,
+      "audio_script_length": 1093,
+      "sample_reply": "Excellente question ! Pour vous offrir les **anecdotes les plus riches et les plus \"secrets\"**, j'ai besoin de savoir dans quelle ville vous souhaitez..."
+    },
+    {
+      "test_id": 2,
+      "destination": "Paris",
+      "country": "France",
+      "query": "Recommande-moi les meilleurs bistrots traditionnels et pâtisseries du quartier Latin.",
+      "success": true,
+      "error": null,
+      "duration_seconds": 43.78,
+      "features_count": 3,
+      "itinerary_stops_count": 3,
+      "reply_length": 65,
+      "audio_script_length": 65,
+      "sample_reply": "Voici les meilleures recommandations trouvées pour votre visite !..."
+    },
+    {
+      "test_id": 3,
+      "destination": "Paris",
+      "country": "France",
+      "query": "Crée un itinéraire à pied de 3 heures reliant Notre-Dame, le Louvre et les Tuileries.",
+      "success": true,
+      "error": null,
+      "duration_seconds": 25.28,
+      "features_count": 4,
+      "itinerary_stops_count": 3,
+      "reply_length": 2319,
+      "audio_script_length": 986,
+      "sample_reply": "# 🗼 Paris en 3 H : de la Flèche de Notre-Dame aux Allées des Tuileries  *Un circuit à pied d'exception, au cœur de l'âme parisienne. On part à la déco..."
+    }
+  ]
+}
